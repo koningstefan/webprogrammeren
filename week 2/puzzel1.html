@@ -1,0 +1,31 @@
+ <!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Puzzel 1</title>
+<script type="text/javascript">
+	function vergelijkWoorden(){
+		var naam1 = prompt("naam1");
+		var naam2 = prompt("naam2");
+		if (naam1.length == naam2.length) {
+			alert("Beide woorden zijn even lang met "+ naam1.length+ " letters.")}
+	
+		if(naam1.length > naam2.length){
+			alert("Het woord "+ naam1 + " is het langst met "+ naam1.length+ " letters.")}
+			
+		if(naam1.length < naam2.length){
+			alert("Het woord "+ naam2 + " is het langst met "+ naam2.length+ " letters.")}
+	};
+
+
+</script>
+
+</head>
+
+<body>
+	<h1>Puzzel 1</h1>
+	<button onclick="vergelijkWoorden()">Vergelijk woorden</button>
+</body>
+
+</html> 
