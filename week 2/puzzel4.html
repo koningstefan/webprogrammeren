@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Puzzel 4</title>
+<script type="text/javascript">
+	function vergelijkWoorden(){
+		var naam1 = myForm.elements["naam1"].value;
+		var naam2 = myForm.elements["naam2"].value;
+
+		if (naam1.length == naam2.length) {
+			document.getElementById("demo").innerHTML = "Beide woorden zijn even lang met "+ naam1.length+ " letters."}
+	
+		else{
+			if(naam1.length > naam2.length){
+			document.getElementById("demo").innerHTML ="Het woord "+ naam1 + " is het langst met "+ naam1.length+ " letters."}
+			
+			else{document.getElementById("demo").innerHTML ="Het woord "+ naam2 + " is het langst met "+ naam2.length+ " letters."}
+		}
+	};
+
+
+</script>
+
+</head>
+
+<body>
+	<h1>Puzzel 4</h1>
+	<form id="myForm" action="">
+		woord 1: <input type="text" name="naam1" value=""></input>
+		woord 2: <input type="text" name="naam2" value=""></input>
+	</form>
+	
+	<button onclick="vergelijkWoorden()">Vergelijk woorden</button>
+	
+	<p id="demo"></p>
+
+</body>
+
+</html> 

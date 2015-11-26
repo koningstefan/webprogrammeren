@@ -5,20 +5,32 @@
 <head>
 <title>Puzzel 2</title>
 <script type="text/javascript">
-	function berekenBMI(){
-	};
+function berekenBMI(){
+	
 
 	var w1 = myForm.elements["w1"].value;
+	var w2 = myForm.elements["w2"].value;
+    document.getElementById("demo").innerHTML = w1 + w2;
+
+};
+
 
 </script>
 
-</head>s
+</head>
 
 <body>
 	<h1>Puzzel 1</h1>
 	<form id="myForm" action="">
-		woord 1: <input type="text" name="w1" value""></input>
+		woord 1: <input type="text" name="w1" value=""></input>
+		woord 2: <input type="text" name="w2" value=""> </input>
 	</form>
+	
+		<button onclick="berekenBMI()">Bereken jou BMI!</button>
+		
+	<p id="demo"></p>
+
+
 </body>
 
 </html> 

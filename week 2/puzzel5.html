@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Puzzel 5</title>
+<script type="text/javascript">
+	function dollar(){
+		var eurodollar = myForm.elements["waarde"].value * 1.08;	
+		document.getElementById("demo").innerHTML = "U heeft " + eurodollar.toFixed(2) + " Dollar.";
+	};
+
+	function peso(){
+		var europeso = myForm.elements["waarde"].value * 18.06;	
+		document.getElementById("demo").innerHTML = "U heeft " + europeso.toFixed(2) + " Peso.";
+	};
+	function yen(){
+		var euroyen = myForm.elements["waarde"].value * 132.04;
+		document.getElementById("demo").innerHTML = "U heeft " + euroyen.toFixed(2) + " Yen.";
+	};
+
+	function pond(){
+		var europond = myForm.elements["waarde"].value * 0.71;
+		document.getElementById("demo").innerHTML = "U heeft " + europond.toFixed(2) + " Pond.";
+	};
+</script>
+
+</head>
+
+<body>
+	<h1>Puzzel 5</h1>
+	<form id="myForm" action="">
+		Aantal Euro's: <input type="text" name="waarde" value=""></input>
+	</form>
+	
+	<button onclick="dollar()">Euro naar Dollar</button>
+	<button onclick="peso()">Euro naar Peso</button>
+	<button onclick="yen()">Euro naar Yen</button>
+	<button onclick="pond()">Euro naar Pond</button>
+	<p id="demo"></p>
+
+</body>
+
+</html> 
